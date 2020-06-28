@@ -1,0 +1,14 @@
+League of Legends is a 5v5 multiplayer online battle arena (moba) video game developed and published by Riot Games for Microsoft Windows and macOS. Released on October
+2009, League of Legends has become one of the most popular online game in the world. I am a big fan of League of Legends and I have been played League for more than 5 years.
+I wonder whether I could predict the results of each ranked games given the teams before the game start?
+
+Based on the thousands of ranked games data, I want to train a model which could predict the winner of each game given each team with a more than 60% accuracy. This is actually a binary classication
+problem. Thus, the accuracy of the random guess will be close to 50% if the distribution of two classes is close to 50%.
+
+Raw data is stored in data directory. Raw data is download from: https://www.kaggle.com/paololol/league-of-legends-ranked-matches.
+
+Data Pre-process:
+Run data_process_1.py, data_process_2.py, data_process_3.py files one by one and you will get several csv files. There is a file called final_data.csv, which is the data we will use for classification. Some codes in data_process_1.py and data_process_2.py files are from the open source code from Kaggle (https://www.kaggle.com/laowingkin/lol-how-to-win-the-world-championship).
+
+Classification:
+Run main.py file and you will see the results of the classification. This file is the main file for the project.
